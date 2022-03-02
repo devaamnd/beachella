@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="225dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp">
+
+
+
+        <ImageView
+            android:id="@+id/city_att_lyt_image"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/a1"/>
+
+        <TextView
+            android:id="@+id/city_att_lyt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/avenir_demi"
+            android:gravity="left"
+            android:maxLines="1"
+            android:maxWidth="220dp"
+            android:paddingLeft="5dp"
+            android:text="Title"
+            android:layout_gravity="bottom"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginBottom="22dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/timing"
+                app:tint="@color/colorPrimary"
+                android:layout_marginRight="3dp"
+                android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timing:"
+            android:textSize="14dp"
+            android:fontFamily="@font/avenir_demicn"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/city_att_lyt_timing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8:30AM - 7:15PM"
+            android:textSize="14dp"
+            android:fontFamily="@font/avenir_demicn"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="5dp"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/city_att_lyt_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textSize="14dp"
+                android:fontFamily="@font/avenir_demicn"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KM"
+                android:textSize="14dp"
+                android:fontFamily="@font/avenir_demicn"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="2dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="65dp"
+            android:layout_height="15dp"
+            android:orientation="horizontal"
+            android:layout_gravity="right|bottom"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/gray"
+            android:layout_marginBottom="25dp"
+            >
+
+            <TextView
+                android:id="@+id/city_att_lyt_site"
+                android:layout_width="55dp"
+                android:layout_height="15dp"
+                android:fontFamily="@font/avenir_demicn"
+                android:text="Historical Site"
+                android:textColor="@color/light_black"
+                android:textSize="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="44dp"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/colorPrimary">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/star"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                app:tint="@color/white"/>
+
+            <TextView
+                android:id="@+id/city_att_lyt_rating"
+                android:layout_width="25dp"
+                android:layout_height="14dp"
+                android:text="4.8"
+                android:fontFamily="@font/avenir_demi"
+                android:textColor="@color/white"
+                android:layout_gravity="right|center_vertical"
+                android:textSize="12dp"/>
+
+
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

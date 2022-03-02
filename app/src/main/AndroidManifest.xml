@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.skylinetech.travelbnb">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/main_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/main_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".FavoritesActivity" />
+        <activity android:name=".StaysActivity" />
+        <activity android:name=".TripsActivity" />
+        <activity android:name=".CarSearchResultActivity" />
+        <activity android:name=".CarRentSearchActivity" />
+        <activity android:name=".BookHotelActivity" />
+        <activity android:name=".HotelSearchResultsActivity" />
+        <activity android:name=".HotelSearchActivity" />
+        <activity android:name=".CheckoutActivity" />
+        <activity android:name=".BookFlightActivity" />
+        <activity android:name=".FlightSearchResultActivity" />
+        <activity android:name=".FlightSearchActivity" />
+        <activity android:name=".CityDetailsActivity" />
+        <activity android:name=".StoriesActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_api" />
+
+        <activity android:name=".AllReviewsActivity" />
+        <activity android:name=".PlaceDetailsActivity" />
+        <activity android:name=".MainActivity">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/hotels_image"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/col1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/hotel_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/avenir_demi"
+                android:maxWidth="180dp"
+                android:text="Trianon Borgo Pio Aparthotel Rome"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintStart_toEndOf="@+id/hotels_image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/stars"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintStart_toEndOf="@+id/hotels_image"
+                app:layout_constraintTop_toBottomOf="@+id/hotel_name" />
+
+            <LinearLayout
+                android:id="@+id/lyt_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toEndOf="@+id/hotels_image"
+                app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:orientation="horizontal"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="2dp"
+                    android:paddingBottom="3dp">
+
+                    <TextView
+                        android:id="@+id/hotel_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenir_regular"
+                        android:maxLines="1"
+                        android:text="4.5"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenir_regular"
+                        android:text="/5"
+                        android:textColor="@color/white"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hotel_total_reviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_regular"
+                    android:maxLines="1"
+                    android:text="(12 Reviews)"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hotel_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenir_demicn"
+                android:textColor="@color/colorPrimary"
+                android:maxLines="1"
+                android:text="420m"
+                android:textSize="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                app:layout_constraintStart_toEndOf="@+id/hotels_image"
+                app:layout_constraintTop_toBottomOf="@+id/lyt_rating" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenir_demicn"
+                android:maxLines="1"
+                android:text="from here"
+                android:textSize="12dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="4dp"
+                app:layout_constraintStart_toEndOf="@+id/hotel_distance"
+                app:layout_constraintTop_toBottomOf="@+id/lyt_rating" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_demicn"
+                    android:maxLines="1"
+                    android:text="Starts at"
+                    android:layout_marginRight="5dp"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/hotel_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/avenir_demicn"
+                    android:maxLines="1"
+                    android:text="$140"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16dp" />
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TravelBnB</string>
+    <string name="title_trips">Trips</string>
+    <string name="title_stays">Stays</string>
+    <string name="title_home">Home</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="location_text">You\'re in London</string>
+    <string name="discover">Discover</string>
+    <string name="tandc">By proceeding, you accept the Terms and Conditions</string>
+
+    <string name="test_details">This was originally called the Flavian Amphitheatre and was mostly used as public entertainment arena.The Colosseum is one of the most famous attractions in Rome and is where most gladiatorial fights took place. Today, actors in gladiator clothes stand outside the Colosseum, where you can take pictures with them (for a price!).\n\nThe Colosseum is a testament to the ingenuity of the builders, having stood the test of time. While parts have been damaged, the Colosseum still remains standing in most of its original glory today. It is advisable that you buy your tickets in advance to skip the ticketing queue, which can be quite the time saver!</string>
+</resources>
